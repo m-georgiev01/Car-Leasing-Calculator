@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ededed;
+}
+
+/* Desktop */
+
+.content-container {
+  margin: 12vh auto;
+  max-width: 42%;
+  border: 1px solid #c9c9c9;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1vw 4vw;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-info-container,
+.lease-container {
+  max-width: 45%;
+}
+
+.car-info-container > div,
+.lease-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4vh;
+}
+
+.car-info-container > div > label,
+.lease-container > div > label {
+  width: 100%;
+  text-align: start;
+  font-size: 0.79rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  margin-top: 2vh;
+}
+
+.form-control-input {
+  padding: 7px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+}
+
+.leasing-details-container {
+  border-top: 2px solid #c9c9c9;
+}
+
+.leasing-details-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leasing-details-container > div > div {
+  width: 45%;
+  padding: 0;
+}
+
+.leasing-details-container > div > div:first-child {
+  border-right: 1px solid black;
+}
+
+.leasing-details-container > div > div p {
+  margin: 1vh;
+  font-size: 0.79rem;
+  font-weight: 500;
+  text-align: start;
+}
+
+span {
+  color: red;
+  font-size: 0.79rem;
+  margin-top: 1vh;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content-container {
+    padding: 1vw 1.5vw;
+  }
+
+  .input-container {
+    flex-wrap: wrap;
+  }
+
+  .car-info-container,
+  .lease-container {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+
+  .car-info-container > div,
+  .lease-container > div {
+    margin-bottom: 3vh;
+  }
+
+  .leasing-details-container > div > div {
+    width: 100%;
+    margin-bottom: 1vh;
+  }
+
+  .leasing-details-container > div > div:first-child {
+    border-right: none;
+  }
+
+  .leasing-details-container > div {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .content-container {
+    max-width: 60%;
+    padding: 1vw 3vw;
+  }
+
+  .input-container {
+    flex-wrap: wrap;
+  }
+
+  .car-info-container,
+  .lease-container {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+
+  .leasing-details-container > div > div {
+    width: 100%;
+    margin-bottom: 1vh;
+  }
+
+  .leasing-details-container > div > div:first-child {
+    border-right: none;
+  }
+
+  .leasing-details-container > div {
+    flex-wrap: wrap;
+  }
+
+  .car-info-container > div > label,
+  .lease-container > div > label {
+    font-size: 0.9rem;
+  }
+
+  .leasing-details-container > div > div p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .content-container {
+    max-width: 70%;
+    padding: 1vw 3vw;
+  }
+
+  .input-container {
+    flex-wrap: wrap;
+  }
+
+  .car-info-container,
+  .lease-container {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+
+  .leasing-details-container > div > div {
+    width: 100%;
+    margin-bottom: 1vh;
+  }
+
+  .leasing-details-container > div > div:first-child {
+    border-right: none;
+  }
+
+  .leasing-details-container > div {
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
